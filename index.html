@@ -11,20 +11,28 @@
     </head>
 
     <body>
-        <h1>The Hangman Game</h1>
-        <p>Guess a word from the IT industry.</p>
-        <br>
-        <div>
-            <h1 id="guessfield"/h1>
-        </div>
-        <br>
-        <h1>Guess the word:</h1>
+      <br>
+      <h1>The Hangman Game</h1>
+      <p>Guess a word from the IT industry.</p>
+      <br>
+      <div>
+        <h1 id="guessfield"></h1>
+      </div>
+      <br>
+      <h1>Guess the word:</h1>
+      <div class="input">
         <input type="text" id="guessLetter" placeholder="Type a letter" maxlength="1" size="8">
         <button type="button" class="btn btn-primary" id="guessLetter" onclick="checkLetter()">Guess</button>
-        <br><br>
-        <p id="displayWrongLetters">Wrong Letters: </p>
-        <br><br>
-        <div id="outputMessage"></div>
-        <script src="script.js"></script>
+      </div>
+      <br>
+      <div id"textLives">
+        <p>Number of lives left: </p>
+        <p id="noLives" value ="7">7</p>
+      </div>
+      <br>
+      <p id="displayWrongLetters">Wrong Letters: </p>
+      <br><br>
+      <div id="outputMessage"></div>
+      <script src="script.js"></script>
     </body>
 </html>
